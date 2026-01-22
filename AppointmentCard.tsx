@@ -1,6 +1,6 @@
-
 import React from 'react';
-import { Appointment } from '../types';
+// FIXED: Removed "../" to look in current folder
+import { Appointment } from './types';
 import { Calendar, Clock, MapPin, User, Trash2 } from 'lucide-react';
 
 interface Props {
@@ -58,7 +58,3 @@ export const AppointmentCard: React.FC<Props> = ({ appointment, onDelete }) => {
     </div>
   );
 };
-
-// Lucide Icons Mock (Since we can't import actual lucide-react easily without knowing availability, 
-// I'll define simple SVG wrappers or use emojis if needed, but the prompt says popular libraries)
-// Actually, I'll use standard SVG for robustness.
