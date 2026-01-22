@@ -1,6 +1,6 @@
-
 import React, { useState } from 'react';
-import { ServiceType } from '../types';
+// FIXED: Removed "../"
+import { ServiceType } from './types';
 
 interface Props {
   onBook: (data: { name: string; email: string; service: ServiceType; date: string; time: string; notes: string }) => void;
