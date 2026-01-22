@@ -1,8 +1,8 @@
-
 import React, { useState, useEffect, useMemo } from 'react';
 import { Appointment, StaffUser } from './types';
-import { TrashIcon, ClockIcon } from './components/Icons';
-import { AIChatAssistant } from './components/AIChatAssistant';
+// CHANGED: Removed "/components" from these paths
+import { TrashIcon, ClockIcon } from './Icons';
+import { AIChatAssistant } from './AIChatAssistant';
 
 const VSU_DOMAIN = '@valdosta.edu';
 const START_HOUR = 8;
